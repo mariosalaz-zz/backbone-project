@@ -14,7 +14,7 @@ const FormView = Backbone.View.extend({
     this.model.set({[e.target.name]: e.target.value});
   },
 
-  // validate all fields where filled
+  // validate all fields were filled
   isDataValid: function(modelData){
     for (const property in modelData){
       if (modelData[property] === '') {
